@@ -1,6 +1,11 @@
+import edu.umd.cs.mtc.MultithreadedTest;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
-class MultithreadedtcTest extends MultithreadedTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+public class MultithreadedtcSampleTest extends MultithreadedTest {
     AtomicInteger ai;
     @Override public void initialize() {
         ai = new AtomicInteger(1);
